@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+#quizarea {
+    width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+body {
+    background-image: url("imagens/fundo.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: Georgia, serif;
+    margin: 20px;
+    text-align: center;
+}   
+
+p {
+    color: rgb(255, 255, 255); 
+    margin: 20px;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px; /* Mantém o limite máximo de tamanho */
+    padding: 30px 10px;
+    border-radius: 15px;
+    /* Margens gigantes foram removidas, o #quizarea agora cuida do alinhamento */
+}
+
+#estudos {
+    background-color: rgba(150, 40, 0, 0.707);
+    padding: 40px 0;
+}
+
+#telainicial, 
+#telaQiz, 
+#telafinal {
+    background-color: rgb(255, 79, 15);
+    color: white;
+    text-align: center;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    width: 100%; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    padding: 5%;
+}
+
+#telainicial {
+    height: 250px;
+}
+
+#telaQiz, 
+#telafinal {
+    height: 400px;
+}
+
+#telafinal {
+    overflow-y: auto;
+}
+#infoTop {
+    display: flex;
+    justify-content: space-between; 
+    gap: 15px; 
+    width: 90%; 
+    margin: 0 auto 20px auto; 
+}
+
+#cronometro,
+#contadorPergunta {
+    background-color: rgba(255, 255, 255, 0.449);
+    color: rgb(0, 0, 0);
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+    width: 48%; 
+    text-align: center; 
+}
+button {
+    background-color: rgb(220, 200, 85);
+    color: rgb(0, 0, 0);
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: auto;
+    cursor: pointer;
+    font-size: 16px;
+    gap: 15px;
+}
+#alternativas {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+    width: 90%; 
+    margin: 20px auto; 
+}
+.carrossel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 200, 85);
+    color: rgb(0, 0, 0);
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 150px;
+    min-height: 80px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+#conteudoExtra {
+    color: white;
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+}
