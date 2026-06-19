@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Animais Sinantrópicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="quizarea">
+    <div class="container">
+        
+        <div id="telainicial">
+            <h1>Quiz: Animais Sinantrópicos</h1>
+            <p>Desenvolvido pelos alunos do Curso de <strong>Tecnologia para o Trabalho do Cejam Conecta</strong>: Gabrielle Delfino, Hilton Neto, Isabella Moreno, Rayza Ferreira.</p>
+            <button id="botaoinicial" onclick="iniciarQuiz()">Aperte play para começar</button>
+        </div>
+
+        <div id="telaQiz" style="display:none;">
+            <div id="QuadroQuiz">
+    
+                <div id="infoTop">
+                    <div id="contadorPergunta">
+                        Pergunta 1 de 10
+                    </div>
+                    <div id="cronometro">
+                        Tempo: 0s
+                    </div>
+                </div>
+                <div id="barraContainer">
+                    <div id="barraProgresso"></div>
+                </div>
+
+                <h2 id="pergunta"></h2>
+                <div id="alternativas"></div>
+            </div>
+        </div>
+
+        <div id="telafinal" style="display:none;">
+            <h1>Quiz Finalizado!</h1>
+            <p id="resultado"></p>
+            <div id="relatorioErros"></div>
+            
+            <button onclick="reiniciarQuiz()">
+                Jogar Novamente
+            </button>
+        </div>
+
+    </div>
+    </section>
+<section id="estudos">
+
+    <h1>📚 Central de Estudos</h1>
+
+    <p>
+        Role os conteúdos abaixo para aprender mais sobre os temas do quiz.
+    </p>
+
+    <div class="carrossel">
+
+        <div class="card" onclick="mostrarConteudo(0)">
+            Conceito de Animais Sinantrópicos:
+        </div>
+
+	    <div class="card" onclick="mostrarConteudo(1)">
+            Exemplo de Sinantrópicos (Ratos):
+        </div>
+         <div class="card" onclick="mostrarConteudo(2)">
+            Leptospirose e os Ratos:
+        </div>
+
+        <div class="card" onclick="mostrarConteudo(3)">
+            Doenças do Aedes aegypti:
+        </div>
+
+        <div class="card" onclick="mostrarConteudo(4)">
+           Proliferação de Mosquitos:
+        </div>
+
+        <div class="card" onclick="mostrarConteudo(5)">
+            Habitat das Baratas:
+        </div>
+
+        <div class="card" onclick="mostrarConteudo(6)">
+            Prevenção Contra Ratos:
+        </div>
+
+        <div class="card" onclick="mostrarConteudo(7)">
+            Transmissão por Pombos:
+        </div>
+
+        <div class="card" onclick="mostrarConteudo(8)">
+            Diferença para Animais Silvestres
+        </div>
+
+        <div class="card" onclick="mostrarConteudo(9)">
+            A Regra dos "4As" do Controle
+        </div>
+
+</div>
+
+    <div id="conteudoExtra">
+
+        <h2>Selecione um tema acima</h2>
+
+    </div>
+
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
